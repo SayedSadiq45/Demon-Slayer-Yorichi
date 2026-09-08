@@ -24,6 +24,32 @@
   .hero-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; z-index:0; }
   .content { position:absolute; inset:0; z-index:20; pointer-events:none; }
 
+  .creator-credit {
+    position:absolute; top:28px; right:34px; z-index:28; pointer-events:auto;
+    min-width:205px; padding:12px 15px 13px; text-align:left;
+    border:1px solid rgba(255,212,121,0.55); border-radius:3px;
+    background:linear-gradient(135deg,rgba(8,5,18,0.84),rgba(45,8,19,0.58));
+    box-shadow:0 0 0 1px rgba(123,63,242,0.18), 0 0 24px rgba(255,59,48,0.24), inset 0 0 18px rgba(123,63,242,0.12);
+    backdrop-filter:blur(8px); transition:transform .3s, box-shadow .3s;
+  }
+  .creator-credit:hover { transform:translateY(-3px); box-shadow:0 0 0 1px rgba(255,212,121,0.45), 0 0 32px rgba(255,59,48,0.42), inset 0 0 18px rgba(123,63,242,0.2); }
+  .creator-credit .aura {
+    display:block; font-family:'Bebas Neue',sans-serif; font-size:11px; letter-spacing:0.42em;
+    color:#ffd479; text-shadow:0 0 12px rgba(255,212,121,0.75); margin-bottom:3px;
+  }
+  .creator-credit .creator-name {
+    display:block; font-family:'Cinzel',serif; font-weight:800; font-size:18px; letter-spacing:0.11em;
+    color:#fff; text-shadow:0 0 12px rgba(255,255,255,0.5); white-space:nowrap;
+  }
+  .creator-links { display:flex; gap:13px; margin-top:8px; }
+  .creator-links a {
+    font-family:'Bebas Neue',sans-serif; font-size:12px; letter-spacing:0.16em; color:#e5d7ff;
+    text-decoration:none; border-bottom:1px solid rgba(229,215,255,0.5); transition:color .2s, border-color .2s;
+  }
+  .creator-links a:hover, .creator-links a:focus-visible { color:#ffd479; border-color:#ffd479; outline:none; }
+  .creator-links a.live-link { color:#ffd479; border-color:rgba(255,212,121,0.7); }
+  .creator-links a.live-link::before { content:'↗'; display:inline-block; margin-right:4px; font-family:Arial,sans-serif; }
+
   .kanji-left {
     position:absolute; top:50%; left:46px; transform:translateY(-50%); z-index:21;
     font-family:'Shippori Mincho',serif; font-weight:800; font-size:60px; line-height:1.08;
@@ -84,6 +110,7 @@
     transition:opacity .6s; border:1px solid rgba(255,255,255,0.12);
   }
   @media (max-width:760px){
+    .creator-credit{top:88px; right:18px; min-width:184px; padding:9px 11px 10px;} .creator-credit .creator-name{font-size:15px;} .creator-links{margin-top:6px; gap:11px;}
     .kanji-left{font-size:34px; left:18px;} .kanji-right{font-size:24px; right:18px;}
     .title-wrap .main{font-size:28px; letter-spacing:0.08em;} .title-wrap .eyebrow{font-size:11px; letter-spacing:0.35em;}
     .lower{padding:0 20px; bottom:30px;} .card{width:46%;}
@@ -99,6 +126,16 @@
     <div class="eyebrow">Kimetsu no Yaiba</div>
     <div class="main">Sun &amp; Moon</div>
   </div>
+
+  <aside class="creator-credit" aria-label="Created by Sayed Sadiq">
+    <span class="aura">ORIGINAL EXPERIENCE</span>
+    <strong class="creator-name">SAYED SADIQ</strong>
+    <nav class="creator-links" aria-label="Sayed Sadiq links">
+      <a class="live-link" href="https://demon-slayer-sun-moon-sayed-sadiq.vercel.app/" target="_blank" rel="noopener noreferrer">Live Site</a>
+      <a href="https://www.linkedin.com/in/sayed-sadiq45/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/SayedSadiq45" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
+  </aside>
 
   <!-- 継国縁壱 = Tsugikuni Yoriichi ; 日の呼吸 = Sun Breathing -->
   <div class="kanji-left">継国縁壱</div>

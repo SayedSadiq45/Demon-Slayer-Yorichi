@@ -1,14 +1,14 @@
 # Demon Slayer — Sun & Moon Reveal https://demon-slayer-sun-moon-sayed-sadiq.vercel.app/
 
-An interactive hero banner built around Yoriichi Tsugikuni and his brother Kokushibo. Move your cursor across the screen and a comet-trail mask carves through one image to reveal the other, framed as a Sun Breathing vs. Moon Breathing showdown — complete with floating embers and ambient lightning.
+An atmospheric interactive experience by **Sayed Sadiq**, built around Yoriichi Tsugikuni and Kokushibo. Move across the screen and a comet-trail mask reveals the opposing image in a Sun Breathing vs. Moon Breathing showdown, surrounded by floating embers and ambient lightning.
 
 Built with a single HTML5 `<canvas>`. No frameworks, no build step.
 
----
+## Live Experience
 
-## Demo
+Visit the deployed experience: [demon-slayer-sun-moon-sayed-sadiq.vercel.app](https://demon-slayer-sun-moon-sayed-sadiq.vercel.app/)
 
-Open `demon-slayer-sun-moon.html` in any modern browser and move your mouse across the screen. On touch devices, drag a finger across the image.
+You can also open [index.html](index.html) locally in any modern browser. Move your mouse across the screen or drag with a finger on touch devices.
 
 ---
 
@@ -26,8 +26,8 @@ Open `demon-slayer-sun-moon.html` in any modern browser and move your mouse acro
 
 ## Quick start
 
-1. Download `demon-slayer-sun-moon.html`.
-2. Double-click it, or open it in a browser.
+1. Download or clone this repository.
+2. Open [index.html](index.html) in a browser.
 
 No install step, no server. An internet connection is only needed the first time, to load the Google Fonts (Cinzel, Shippori Mincho, Cormorant Garamond, Bebas Neue).
 
@@ -128,12 +128,13 @@ demon-slayer-reveal/
 
 ---
 
-## Credits & licensing
+## Ownership & License
 
-- Code: free to use and modify for your own projects.
-- **Artwork & "Demon Slayer" / characters**: Kimetsu no Yaiba is created by Koyoharu Gotouge; all character art and trademarks belong to their respective rights holders. The images used here are fan/demo assets — replace them with art you have the right to use before publishing.
+- Project created and maintained by **Sayed Sadiq**.
+- The source code is available under the [MIT License](LICENSE).
+- **Demon Slayer**, its characters, artwork, and trademarks belong to their respective rights holders. This is a fan/demo experience and is not affiliated with the rights holders.
 - Kanji used: 継国縁壱 (Tsugikuni Yoriichi) and 月ノ呼吸 (Moon Breathing) — standard Japanese, not the stylized in-universe title cards. Verify rendering on your target devices, as CJK glyphs depend on the system/browser font stack.
 
 ---
 
-*The sun and the moon, forever chasing each other across the sky.* ⚔️
+*The sun and the moon, forever chasing each other across the sky.*
